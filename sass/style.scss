@@ -7,6 +7,20 @@ $ubicacion-header: center;
 $sub-header:underline;
 $border-header:dotted;
 
+/*Variables para el Aside */
+
+
+/*Variables para img*/
+$border-img : solid;
+$ancho: 300px;
+$alto: 400px;
+
+/*Variables para audio*/
+$border-audio : solid ;
+/*Variables para video  */
+$border-video : double ;
+
+
 body {
   font: 100% $font-stack;
   color: $primary-color;
@@ -18,6 +32,29 @@ body {
 header{
     text-align: $ubicacion-header;
     text-decoration: $sub-header;
-    border-style:$border-header;
+}
+
+Aside img{
+    border: $border-img;
+    width: $ancho;
+    height: $alto;
+}
+Aside img:hover{
+    height: 420px;
+    border-color: aqua;
+}
+
+Aside video{
+    border: $border-video;
+     width: $ancho;
+    height: $alto;
+}
+Aside audio{
+    border: $border-audio;
+
 
 }
+
+
+
+
