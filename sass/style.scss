@@ -1,0 +1,23 @@
+$font-stack:    Cursive, sans-serif;
+$primary-color: #1d860f;
+$fondo: #d3c6a8;
+
+/*Variables para el Header  */
+$ubicacion-header: center;
+$sub-header:underline;
+$border-header:dotted;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background: $fondo;
+  text-align: $ubicacion-header;
+
+}
+
+header{
+    text-align: $ubicacion-header;
+    text-decoration: $sub-header;
+    border-style:$border-header;
+
+}
