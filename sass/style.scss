@@ -1,5 +1,5 @@
 $font-stack:    Cursive, sans-serif;
-$primary-color: #1d860f;
+$primary-color: #141514;
 $fondo: #d3c6a8;
 
 /*Variables para el Header  */
@@ -9,16 +9,18 @@ $border-header:dotted;
 
 /*Variables para el Aside */
 
+$text-color: blue;;
+$color-border:rgba(235, 124, 124, 0.31);
 
 /*Variables para img*/
 $border-img : solid;
-$ancho: 300px;
-$alto: 400px;
+$ancho: 200px;
+$alto: 300px;
 
 /*Variables para audio*/
 $border-audio : solid ;
 /*Variables para video  */
-$border-video : double ;
+$border-video : solid ;
 
 
 body {
@@ -28,33 +30,126 @@ body {
   text-align: $ubicacion-header;
 
 }
-
 header{
     text-align: $ubicacion-header;
     text-decoration: $sub-header;
 }
 
-Aside img{
+article{
+    float: left;
+    max-width: 40px;
+  max-height:auto;
+  margin: 0 auto;
+  background-color: #FFF;
+  border-radius: 10px;
+  border: solid;
+  padding: 20px 25px;
+color: $text-color;
+}
+article img{
+     max-width: 100px;
+  max-height:70px;
+}
+
+section{
+  max-width: 670px;
+  max-height:auto;
+  margin: 0 auto;
+  background-color: #FFF;
+  border-radius: 10px;
+  border: solid;
+  padding: 20px 25px;
+color: $text-color;
+
+}
+
+section img{
     border: $border-img;
     width: $ancho;
     height: $alto;
+    border-color: $color-border;
 }
-Aside img:hover{
-    height: 420px;
-    border-color: aqua;
+section img:hover{
+    height: 220px;
+    border-color: skyblue;
+    border-style: dotted;
 }
-
-Aside video{
+section video{
     border: $border-video;
      width: $ancho;
     height: $alto;
+   border-color: $color-border;
 }
-Aside audio{
+section video:hover{
+    height: 220px;
+    border-color: skyblue;
+    border-style: dotted;
+}
+section audio{
     border: $border-audio;
+    width: $ancho;
+    border-color: $color-border;
 
 
 }
+/*@media only screen and (max-width:320px){
+    body{
+      background-color:red;
+    }
+    section{
+      font-size:12px;
+    }
+  }*/
+
+setion[class]{
+    text-transform: capitalize;
+}
+.frm h2{
+    color: cadetblue;
+    text-decoration: underline;
+}
+#s1{
+    color: red;
+    font-family:monospace;
+    text-decoration: underline;
+    text-decoration-color: skyblue;
+}
+#s2{
+    color: black;
+    font-family: fantasy;
+    text-decoration: underline;
+    text-decoration-color: skyblue;
+}
+#s3{
+    color: green;
+    font-family:sans-serif;
+    text-decoration: underline;
+    text-decoration-color: skyblue;
+}
 
 
+section p{
 
+    text-align: justify;
+    color: black;
+}
 
+section p span{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ff9d00;
+    background: #b1e6ae;
+}
+
+button{
+    float: right;
+    border-radius: 10px;
+    background: #96d496;
+    width: 100px;
+    height: auto;
+}
+button:hover{
+    background: green;
+    border-color: black;
+    font-weight: bold;
+}
