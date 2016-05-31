@@ -1,0 +1,63 @@
+/*CSS DEL INDEX 2*/
+$font-stack:    Cursive, sans-serif;
+$primary-color: #141514;
+$fondo: #d3c6a8;
+$text-color: green;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background: $fondo;
+}
+header{
+   text-align: center;
+   text-decoration: underline;
+
+}
+section{
+    max-width: 670px;
+  max-height:auto;
+  margin: 0 auto;
+  background-color: #FFF;
+  border-radius: 10px;
+  border: solid;
+  padding: 20px 25px;
+color: $text-color;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    }
+/* estilo para los formularios */
+#registro{
+    width: auto;
+}
+
+#registro .frm1{
+  float: left;
+}
+#registro .lbl{
+    display: block;
+
+}
+#registro .frm2{
+    float: right;
+}
+.btn{
+    text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    padding: 0px;
+    font-weight: bold;
+}
+.btn:hover{
+     background: green;
+    border-color: black;
+    font-weight: bold;
+}
+imput .txt{
+    background: black;
+    border-color: aqua;
+
+}
